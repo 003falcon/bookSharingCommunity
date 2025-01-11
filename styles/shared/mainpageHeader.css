@@ -16,7 +16,9 @@
 }
 
 .amazon-header-left-section {
-  width: 180px;
+  width: auto;
+  display:flex;
+  align-items:center;
 }
 
 @media (max-width: 800px) {
@@ -34,13 +36,28 @@
   border: 1px solid rgba(0, 0, 0, 0);
 }
 
+.login-text{
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
 .header-link:hover {
   border: 1px solid white;
 }
 
 .amazon-logo {
-  width: 50px;
-  margin-top: 5px;
+  width: 50px; 
+  margin: 0;
+}
+.text {
+  font-size: 18px; 
+  font-family: 'Arial', sans-serif; 
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;; 
+  line-height: 1.5; 
+  letter-spacing: 1px;
+  margin-left:10px;
 }
 
 .amazon-mobile-logo {
@@ -61,10 +78,13 @@
 
 .amazon-header-middle-section {
   flex: 1;
-  max-width: 850px;
-  margin-left: 10px;
+  max-width: 550px;
+  margin-left: auto;
   margin-right: 10px;
+  justify-content:center;
   display: flex;
+  flex-grow:1;
+  margin:0 20px;
 }
 
 .search-bar {
@@ -78,6 +98,7 @@
   border-bottom-left-radius: 4px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  
 }
 
 .search-button {
@@ -101,6 +122,7 @@
   flex-shrink: 0;
   display: flex;
   justify-content: end;
+  gap:20px;
 }
 
 .orders-link {
@@ -124,7 +146,12 @@
   align-items: center;
   position: relative;
 }
-
+.login-link{
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 .cart-icon {
   width: 50px;
 }
